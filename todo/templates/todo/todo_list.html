@@ -7,16 +7,17 @@
     <title>Todo List</title>
 </head>
 <body>
+  
+    <h1>Things I need to do!</h1>
+    <table>
+      {% for item in items %}
+        <tr>
+            <td>{{ item.name }}</td>
+            <td>{{ item.done }}</td>
+        </tr>
+       {% endfor %}
+    </table>
 
-    <nav>
-        <a href="">Logo</a>
-        <ul>
-           <li><a href="">Home</a></li>
-           <li><a href="">About</a></li>
-           <li><a href="">Contact</a></li>
-           <li><a href="">More</a></li>
-        </ul>
-    </nav>
     
 </body>
 </html>

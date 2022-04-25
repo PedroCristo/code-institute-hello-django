@@ -20,5 +20,4 @@ from todo.views import get_todo_nav
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', get_todo_nav, name='get_todo_nav')
-    
 ]
